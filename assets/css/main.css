@@ -527,7 +527,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 900;
-		color: inherit;
+		color: #900505;
 		letter-spacing: -0.0325em;
 	}
 
@@ -638,7 +638,7 @@
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: #98c593;
+		background-color: #900505;
 		border: 0;
 		border-radius: 3.5em;
 		color: #ffffff;
@@ -695,7 +695,7 @@
 		input[type="reset"]:hover,
 		.button:hover,
 		button:hover {
-			background-color: #a8cea4;
+			background-color: #000000;
 		}
 
 		input[type="button"]:active,
@@ -712,7 +712,7 @@
 		.button.style2,
 		button.style2 {
 			background-color: transparent;
-			border: solid 2px #e5e6e7;
+			border: solid 2px #000000;
 			color: inherit;
 		}
 
@@ -823,7 +823,7 @@
 		width: 100%;
 		padding: 0.65em 0.75em;
 		background: none;
-		border: solid 2px #e5e6e7;
+		border: solid 2px #000000;
 		color: inherit;
 		border-radius: 0.5em;
 		outline: none;
@@ -859,19 +859,23 @@
 	}
 
 	::-webkit-input-placeholder {
-		opacity: 0.375;
+		color: #000000;
+		opacity: 1;
 	}
 
 	:-moz-placeholder {
-		opacity: 0.375;
+		color: #000000;
+		opacity: 1;
 	}
 
 	::-moz-placeholder {
-		opacity: 0.375;
+		color: #000000;
+		opacity: 1;
 	}
 
 	:-ms-input-placeholder {
-		opacity: 0.375;
+		color: #000000;
+		opacity: 1;
 	}
 
 	.formerize-placeholder {
@@ -2093,29 +2097,30 @@
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
+		background: url("../images/profile/mariaperezfis1.7.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: top center;
+		background-repeat: no-repeat;
 	}
 
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background: url("../images/profile/mariaperezfis1o531.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position:  center center;
+		background-repeat: no-repeat;
 	}
 
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background: url("../images/profile/mariaperezfis1.14.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
 	}
 
 /* Contact */
@@ -2123,6 +2128,7 @@
 	#contact {
 		overflow: hidden;
 		padding-bottom: 0;
+			background-color: #900505;
 	}
 
 		#contact .box {
