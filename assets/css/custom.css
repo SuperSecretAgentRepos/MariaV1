@@ -1,0 +1,25 @@
+.main-about{
+	background-color: #900505;
+	color: #ffffff;
+	text-align: center;
+	font-size: 370%;
+	padding-top: 11%;
+}
+.header-half{
+	min-height: 50%;
+	max-height: 50%;
+}
+/* Two */
+
+	#two-about {
+		background: url("../images/profile/mariaperezfis2e4.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+	}
+	#three-about{
+		background: url("../images/profile/mariaperezfis1o515.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+	}

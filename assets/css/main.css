@@ -1813,7 +1813,7 @@
 				-ms-transform: translateZ(0);
 				transform: translateZ(0);
 				opacity: 1.0;
-				margin: 0;
+				margin: 220px 0 0 0;
 			}
 
 			.main.style1.inactive > .content {
@@ -2117,7 +2117,7 @@
 /* Two */
 
 	#two {
-		background: url("../images/profile/mariaperezfis1.14.jpg");
+		background: url("../images/profile/squat.jpg");
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center center;
