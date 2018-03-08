@@ -6,9 +6,24 @@
 	text-align: center;
 	font-size: 370%;
 	padding-top: 6%;
+	font-family: "Source Sans Pro", "sans-serif";
+}
+.main-pt{
+	color: #ce0e0e;
+	height: 100%;
+	font-size: 370%;
+	text-align: center;
+	background: url("../images/profile/mariaperezfis2e4.jpg");
+	background-size: cover;
+	padding-top: 6%;
+	font-family: "Source Sans Pro", "sans-serif";
+}
+.heavy-testimonial{
+	font-size: 75%;
+	font-weight: 900;
 }
 .inverted-section{
-	background-color: #900505
+	background-color: #900505;
 }
 .cta-button{
 	text-align: center;
@@ -35,12 +50,15 @@
 .main-section h2{
 	font-size: 100%;
 }
-.main-section p{
+.main-section-p{
 	font-size: 40%;
 	text-align: left;
 }
 .wht-text{
 	color: #ffffff;
+}
+.red-text{
+	color: #900505;
 }
 /* Two */
 
