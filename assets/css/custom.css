@@ -1,9 +1,11 @@
 /*Main color #900505*/
 
 .main-about{
-	background-color: #900505;
-	color: #ffffff;
+	color: #ce0e0e;
 	text-align: center;
+	background: url("../images/profile/mariaperezfis1.14.jpg");
+	background-size: cover;
+	height: 100%;
 	font-size: 370%;
 	padding-top: 6%;
 	font-family: "Source Sans Pro", "sans-serif";
@@ -14,6 +16,16 @@
 	font-size: 370%;
 	text-align: center;
 	background: url("../images/profile/mariaperezfis2e4.jpg");
+	background-size: cover;
+	padding-top: 6%;
+	font-family: "Source Sans Pro", "sans-serif";
+}
+.main-nutrition{
+	color: #ce0e0e;
+	height: 100%;
+	font-size: 370%;
+	text-align: center;
+	background: url("../images/profile/veggies.jpeg");
 	background-size: cover;
 	padding-top: 6%;
 	font-family: "Source Sans Pro", "sans-serif";
@@ -40,12 +52,14 @@
 	max-height: 32%;
 }
 .main-section{
-
 	background-color: #900505;
 	color: #ffffff;
 	text-align: center;
 	font-size: 370%;
 	padding-top: 6%;
+}
+.main-section h1{
+	font-size: 150%;
 }
 .main-section h2{
 	font-size: 100%;
@@ -60,6 +74,15 @@
 .red-text{
 	color: #900505;
 }
+.section-p{
+	font-size: 75%;
+	font-weight: 700;
+}
+/*Personal Training*/
+.reasons-why{
+	color: #ffffff;
+}
+
 /* Two */
 
 	#two-about {
