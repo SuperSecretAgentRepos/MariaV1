@@ -1,9 +1,21 @@
 /*Main color #900505*/
 
+.full-btn{
+width: 100%;
+margin-top: 10px;
+height: 60px;
+font-size: 29px;
+line-height: 60px;
+font-weight: 700;
+}
+.rounded-field{
+	border-radius: 10px;
+	height: 55px;
+}
 .main-about{
 	color: #ce0e0e;
 	text-align: center;
-	background: url("../images/profile/mariaperezfis1.14.jpg");
+	background: url("../images/profile/railing.jpg");
 	background-size: cover;
 	height: 100%;
 	font-size: 370%;

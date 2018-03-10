@@ -10,8 +10,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css.map">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -28,6 +31,43 @@
 					</ul>
 				</nav>
 			</header>
+			<!-- Button trigger modal -->
+<!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>-->
+
+
+<script type="text/javascript">
+function display_modal(){
+	$('#myModal').modal()};
+
+	setTimeout(function() { display_modal(); }, 10000);
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button style="margin-top: -22px; margin-bottom: -8px;" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h1 class="modal-title col-md-12 text-center" id="myModalLabel">Enter your e-mail below to recieve updates on fitness tips, coupons, and more!</h1>
+      </div>
+      <div class="modal-body">
+<form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
+<input type="hidden" name="meta_web_form_id" value="1282514594" />
+<input type="hidden" name="listname" value="awlist4969480" />
+<input type="hidden" name="meta_adtracking" value="Day1-Optin" />
+<input type="hidden" name="meta_message" value="1" />
+<input type="hidden" name="meta_required" value="name,email" />
+<input type="email" name="e-mail-field" style="height: 60px;">
+<input type="submit" style="height: 60px;line-height: 60px;" name="e-mail" class="full-btn" value="Get Free Fitness Material!">
+</form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
 
 		<!-- Intro -->
 			<section id="intro" class="main style1 dark fullscreen">
@@ -84,7 +124,7 @@
 					</header>
 					<div class="box">
 					<img src="assets/images/profile/square_logo.png" style="width: 50%; font-size: 162%; margin-bottom: 16px;">	
-						<h1 style="font-size: 162%; margin-bottom: 16px;">Info on your guide to a healthier body!</h1>
+						<h1 style="font-size: 162%; margin-bottom: 16px;">Get info on your guide to a healthier body!</h1>
 						<a href="personal-training.html" class="col-md-12 text-center"><input style="font-size: 137%; font-weight: 900; margin-top: 25px;" value="Get in shape!" type="submit"></a>
 
 						<br>
@@ -123,8 +163,9 @@
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/bootstrap.min.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 
 	</body>
 </html>
