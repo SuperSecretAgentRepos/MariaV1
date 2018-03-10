@@ -42,18 +42,21 @@
 				</div>
 			</section>
 
-		<!-- Brief PT explanation Text -->
-			<section id="contact" class="fullscreen style4">
-				<div class="content box style2 col-md-12">
-					<header>
-						<h2 class="col-md-12" style="text-align: center; font-size: 456%;">Stop guessing about what's good for you!
-						<br>
-						With the Coach Perez Meal Plan, you can learn the secrets to finally sticking to that diet!!</h2>
-					</header>
-					<p style="font-size: 216%;font-weight: 800; margin-top: 8px;font-family: 'Source Sans Pro' , 'sans-serif';" class="col-md-6 col-md-offset-3 text-center">Without a good meal plan, no fitness plan would work! For just $15 you can take the first step on the road to a better body! Vegan and non-vegan plans make this accessible for everyone!</p>
-				<a href="#" style="font-size: 195%; font-weight: 900; margin-top: 25px;" class="col-md-12 text-center"><input value="Eat healthier!" type="submit"></a>
-				</div>
-			</section>
+		<form action="/charge_handler.php" method="post" id="payment-form">
+  <div class="form-row">
+    <label for="card-element">
+      Credit or debit card
+    </label>
+    <div id="card-element">
+      <!-- A Stripe Element will be inserted here. -->
+    </div>
+
+    <!-- Used to display Element errors. -->
+    <div id="card-errors" role="alert"></div>
+  </div>
+
+  <button>Submit Payment</button>
+</form>
 
 
 			<!--About the Program-->
@@ -129,5 +132,59 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+			<script type="text/javascript"> var stripe = Stripe('pk_test_mktTjPMZgXpK29Mv5DANBMYc');
+			var elements = stripe.elements();
+			// Custom styling can be passed to options when creating an Element.
+			var style = {
+			  base: {
+			    // Add your base input styles here. For example:
+			    fontSize: '16px',
+			    color: "#32325d",
+			  }
+			};
+
+			// Create an instance of the card Element.
+			var card = elements.create('card', {style: style});
+
+			// Add an instance of the card Element into the `card-element` <div>.
+			card.mount('#card-element');
+
+			card.addEventListener('change', function(event) {
+			var displayError = document.getElementById('card-errors');
+			  if (event.error) {
+			    displayError.textContent = event.error.message;
+			  } else {
+			    displayError.textContent = '';
+			  }
+			});
+			// Create a token or display an error when the form is submitted.
+			var form = document.getElementById('payment-form');
+			form.addEventListener('submit', function(event) {
+			  event.preventDefault();
+
+			  stripe.createToken(card).then(function(result) {
+			    if (result.error) {
+			      // Inform the customer that there was an error.
+			      var errorElement = document.getElementById('card-errors');
+			      errorElement.textContent = result.error.message;
+			    } else {
+			      // Send the token to your server.
+			      stripeTokenHandler(result.token);
+			    }
+			  });
+			});
+			function stripeTokenHandler(token) {
+			  // Insert the token ID into the form so it gets submitted to the server
+			  var form = document.getElementById('payment-form');
+			  var hiddenInput = document.createElement('input');
+			  hiddenInput.setAttribute('type', 'hidden');
+			  hiddenInput.setAttribute('name', 'stripeToken');
+			  hiddenInput.setAttribute('value', token.id);
+			  form.appendChild(hiddenInput);
+
+			  // Submit the form
+			  form.submit();
+			}
+			</script>
 	</body>
 </html>
