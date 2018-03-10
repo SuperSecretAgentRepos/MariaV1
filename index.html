@@ -53,13 +53,14 @@ function display_modal(){
         <h1 class="modal-title col-md-12 text-center" id="myModalLabel">Enter your e-mail below to recieve updates on fitness tips, coupons, and more!</h1>
       </div>
       <div class="modal-body">
-<form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
+<form method="post" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
 <input type="hidden" name="meta_web_form_id" value="1282514594" />
 <input type="hidden" name="listname" value="awlist4969480" />
 <input type="hidden" name="meta_adtracking" value="Day1-Optin" />
 <input type="hidden" name="meta_message" value="1" />
-<input type="hidden" name="meta_required" value="name,email" />
-<input type="email" name="e-mail-field" style="height: 60px;">
+<input type="hidden" name="meta_required" value="email" />
+<input type="hidden" name="redirect" value="https://www.aweber.com/thankyou.htm?m=default" id="redirect_818506dc91da67557be7c918ce881e51" />
+<input type="email" name="email" style="height: 60px;font-size: 21px;" placeholder="yourname@email.com">
 <input type="submit" style="height: 60px;line-height: 60px;" name="e-mail" class="full-btn" value="Get Free Fitness Material!">
 </form>
       </div>
