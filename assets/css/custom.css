@@ -12,6 +12,9 @@ font-weight: 700;
 	border-radius: 10px;
 	height: 55px;
 }
+.thick-text{
+	font-weight: 700;
+}
 .main-about{
 	color: #ce0e0e;
 	text-align: center;

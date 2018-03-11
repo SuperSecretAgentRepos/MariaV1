@@ -42,84 +42,30 @@
 				</div>
 			</section>
 
-		<form action="/charge_handler.php" method="post" id="payment-form">
-  <div class="form-row">
-    <label for="card-element">
-      Credit or debit card
-    </label>
-    <div id="card-element">
-      <!-- A Stripe Element will be inserted here. -->
-    </div>
+		<!-- Payment capture -->
+		<section id="" class="style1 dark text-center">
+		<div class="container">
+			<div class="col-md-8 col-md-offset-2">
+			<form action="charge_handler.php" method="post" id="payment-form">
+			  <div class="form-row">
+			    <label style="font-size: 44px;" for="card-element">
+			      Credit or debit card
+			    </label>
+			    <div id="card-element">
+			      <!-- A Stripe Element will be inserted here. -->
+			    </div>
 
-    <!-- Used to display Element errors. -->
-    <div id="card-errors" role="alert"></div>
-  </div>
+			    <!-- Used to display Element errors. -->
+			    <div id="card-errors" role="alert"></div>
+			  </div>
 
-  <button>Submit Payment</button>
-</form>
+			  <button style="color: #ffffff;">Submit Payment</button>
+			</form>
+			</div>
+		</div>
+		</section>
 
 
-			<!--About the Program-->
-			<section class="main-section fullscreen col-md-12" style="padding: 3% 0 3% 0;">
-					<header>
-						<h1 class="wht-text col-md-12">What do I get for $15?</h1>
-					</header>
-			</section>
-
-			<!--Reason 1-->
-			<section class="main-section style2 right dark fullscreen">
-				<div class="content box style2" style="padding-bottom: 16px;">
-					<header>
-						<h2>6 Weeks of Meals!</h2>
-					</header>
-					<p style="padding-bottom: 50px;" class="col-md-10 col-md-offset-1 section-p text-left">The guide helps you prepare <span class="red-text"> 3 meals a day</span> every day for 6 weeks. Including snack suggestions to <span class="red-text">keep away those cravings!</span>
-					This meal plan also helps you <span class="red-text">gain lean muscle</span> by providing you with a high protein diet and protein supplement suggestions!
-					</p>
-				</div>
-			</section>
-
-		<!--Testimonial 1-->
-			<section class="main-section fullscreen col-md-12">
-					<header>
-						<h2 class="wht-text">"Flexible meals"</h2>
-					</header>
-					<div class="col-md-12">
-						<p style="padding-bottom: 50px;" class="col-md-10 col-md-offset-1 section-p text-left">The meal plans available through coach Perez work with YOUR schedule. They have everything from quick snacks to the 3 meals a day that you need to keep yourself healthy and on the road to that better body. </p>
-					</div>
-			</section>
-
-<!-- Brief PT explanation Text -->
-			<section id="two" class="fullscreen style3">
-				<div class="content box style2 col-md-12">
-					<header>
-						<h2 class="col-md-12" style="text-align: center; font-size: 456%;">Don't get stuck with a diet that doesn't work!
-						<br>
-						Get a professional meal plan that works!</h2>
-					</header>
-					<p style="font-size: 216%;font-weight: 800; margin-top: 8px;font-family: 'Source Sans Pro' , 'sans-serif';" class="col-md-6 col-md-offset-3 text-center">Ditch those bad habits and learn how to eat healthy with this easy to follow nutrition guide! </p>
-				<a href="#" style="font-size: 195%; font-weight: 900; margin-top: 25px;" class="col-md-12 text-center"><input value="Eat Healthy!" type="submit"></a>
-				</div>
-			</section>
-
-		<!-- Footer -->
-			<footer id="footer" class="col-md-12">
-
-				<!-- Icons -->
-					<ul class="actions">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-					</ul>
-
-				<!-- Menu -->
-					<ul class="menu">
-						
-					</ul>
-
-			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -128,18 +74,18 @@
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="https://js.stripe.com/v3/"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+			<script src="https://js.stripe.com/v3/"></script>
 			<script type="text/javascript"> var stripe = Stripe('pk_test_mktTjPMZgXpK29Mv5DANBMYc');
 			var elements = stripe.elements();
 			// Custom styling can be passed to options when creating an Element.
 			var style = {
 			  base: {
 			    // Add your base input styles here. For example:
-			    fontSize: '16px',
-			    color: "#32325d",
+			    fontSize: '28px',
+			    color: "#000000",
 			  }
 			};
 

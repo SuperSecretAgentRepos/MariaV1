@@ -1769,6 +1769,7 @@
 		position: relative;
 		margin: 0;
 		overflow-x: hidden;
+		font-family: 'Source Sans Pro';
 	}
 
 		.main > .content {
@@ -2107,7 +2108,7 @@
 /* One */
 
 	#one {
-		background: url("../images/profile/mariaperezfis1o531.jpg");
+		background: url("../images/profile/mariaperezfis1o115.jpg");
 		background-size: cover;
 		background-attachment: fixed;
 		background-position:  center center;
