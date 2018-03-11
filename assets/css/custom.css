@@ -99,6 +99,15 @@ font-weight: 700;
 	font-size: 39px;
 	margin-bottom: 45px;
 }
+@media screen and (max-width: 700px) {
+    .adaptive-height{
+		height: 1332px;
+	}
+}
+.adaptive-height{
+	height: 606px;
+	
+}
 
 /* Two */
 
