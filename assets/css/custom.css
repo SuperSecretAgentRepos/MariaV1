@@ -20,6 +20,7 @@ font-weight: 700;
 	text-align: center;
 	background: url("../images/profile/railing.jpg");
 	background-size: cover;
+	background-position: center center;
 	height: 100%;
 	font-size: 370%;
 	padding-top: 6%;
@@ -31,6 +32,7 @@ font-weight: 700;
 	font-size: 370%;
 	text-align: center;
 	background: url("../images/profile/mariaperezfis2e4.jpg");
+	background-position: center center;
 	background-size: cover;
 	padding-top: 6%;
 	font-family: "Source Sans Pro", "sans-serif";
@@ -41,6 +43,16 @@ font-weight: 700;
 	font-size: 370%;
 	text-align: center;
 	background: url("../images/profile/veggies.jpg");
+	background-size: cover;
+	padding-top: 6%;
+	font-family: "Source Sans Pro", "sans-serif";
+}
+.main-comingsoon{
+	color: #ce0e0e;
+	height: 100%;
+	font-size: 370%;
+	text-align: center;
+	background: url("../images/profile/comingsoon.jpeg");
 	background-size: cover;
 	padding-top: 6%;
 	font-family: "Source Sans Pro", "sans-serif";
@@ -99,17 +111,50 @@ font-weight: 700;
 	font-size: 39px;
 	margin-bottom: 45px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 470px) {
     .adaptive-height{
-		height: 1332px;
+		height: 1100px !important;
+	}
+	.adaptive-text{
+		font-size: 60px !important;
 	}
 }
+@media screen and (min-width: 471px) and (max-width: 568px) {
+    .adaptive-height{
+		height: 900px !important;
+	}
+	.adaptive-text{
+		font-size: 60px !important;
+	}
+}
+@media screen  and (min-width: 569px) and (max-width: 786px){
+    .adaptive-height{
+		height: 736px !important;
+	}
+	.adaptive-text{
+		font-size: 60px !important;
+	}
+}
+@media screen and (min-width: 787px) and (max-width: 1020px){
 .adaptive-height{
-	height: 606px;
+	height: 606px !important;
 	
 }
+.adaptive-text{
+	font-size: 91px !important;
+}
+}
+@media screen and (min-width: 787px) and (max-width: 1020px){
+.adaptive-height{
+	height: 606px !important;
+	
+}
+.adaptive-text{
+	font-size: 91px !important;
+}
+}
 
-/* Two */
+/* Two  1020 1200*/
 
 	#two-about {
 		background: url("../images/profile/mariaperezfis2e4.jpg");
