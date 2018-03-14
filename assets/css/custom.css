@@ -61,9 +61,6 @@ font-weight: 700;
 	font-size: 75%;
 	font-weight: 900;
 }
-.hover-red:hover{
-	color: #ce0e0e;;
-}
 .inverted-section{
 	background-color: #900505;
 }
@@ -119,7 +116,8 @@ font-weight: 700;
 		height: 1100px !important;
 	}
 	.adaptive-text{
-		font-size: 60px !important;
+		margin-top: 60%;
+		font-size: 91px !important;
 	}
 }
 @media screen and (min-width: 471px) and (max-width: 568px) {
@@ -127,7 +125,8 @@ font-weight: 700;
 		height: 900px !important;
 	}
 	.adaptive-text{
-		font-size: 60px !important;
+		margin-top: 45%;
+		font-size: 91px !important;
 	}
 }
 @media screen  and (min-width: 569px) and (max-width: 786px){
@@ -135,26 +134,42 @@ font-weight: 700;
 		height: 736px !important;
 	}
 	.adaptive-text{
-		font-size: 60px !important;
+		margin-top: -7%;
+		font-size: 91px !important;
+	}
+	.adaptive-text{
+	margin-top: -7%;
+	font-size: 91px !important;
 	}
 }
 @media screen and (min-width: 787px) and (max-width: 1020px){
-.adaptive-height{
-	height: 606px !important;
-	
-}
-.adaptive-text{
-	font-size: 91px !important;
-}
+	.adaptive-height{
+
+		height: 606px !important;
+		
+	}
+	.adaptive-text{
+		margin-top: -7%;
+		font-size: 91px !important;
+	}
 }
 @media screen and (min-width: 787px) and (max-width: 1020px){
-.adaptive-height{
-	height: 606px !important;
-	
+	.adaptive-height{
+		height: 606px !important;
+	}
+	.adaptive-text{
+		margin-top: -7%;
+		font-size: 91px !important;
+	}
 }
-.adaptive-text{
-	font-size: 91px !important;
-}
+@media screen and (min-width: 1021px){
+	.adaptive-height{
+		height: 606px !important;
+	}
+	.adaptive-text{
+		margin-top: -7%;
+		font-size: 91px !important;
+	}
 }
 
 /* Two */

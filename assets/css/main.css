@@ -1720,6 +1720,9 @@
 						padding: 0 0.5em 0 0.5em;
 						outline: 0;
 					}
+					#header a:hover {
+						color: #ce0e0e;
+					}
 
 		@media screen and (max-width: 736px) {
 
