@@ -20,7 +20,7 @@ font-weight: 700;
 	text-align: center;
 	background: url("../images/profile/railing.jpg");
 	background-size: cover;
-	background-position: center center;
+	background-position-x: center;
 	height: 100%;
 	font-size: 370%;
 	padding-top: 6%;
@@ -60,6 +60,9 @@ font-weight: 700;
 .heavy-testimonial{
 	font-size: 75%;
 	font-weight: 900;
+}
+.hover-red:hover{
+	color: #ce0e0e;;
 }
 .inverted-section{
 	background-color: #900505;
@@ -154,14 +157,15 @@ font-weight: 700;
 }
 }
 
-/* Two  1020 1200*/
+/* Two */
 
 	#two-about {
-		background: url("../images/profile/mariaperezfis2e4.jpg");
+		background: url("../images/profile/mariaperezfis2e38.jpg");
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center;
 	}
+/* Three */
 	#three-about{
 		background: url("../images/profile/mariaperezfis1o515.jpg");
 		background-size: cover;

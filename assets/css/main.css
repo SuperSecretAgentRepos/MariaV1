@@ -537,6 +537,7 @@
 		}
 
 	h2 {
+		font-size: 2.25em;
 		line-height: 1.25em;
 		letter-spacing: -0.05em;
 	}
@@ -1768,7 +1769,6 @@
 		position: relative;
 		margin: 0;
 		overflow-x: hidden;
-		font-family: 'Source Sans Pro';
 	}
 
 		.main > .content {
@@ -1799,6 +1799,7 @@
 		}
 
 			.main.style1 h2 {
+				font-size: 4.25em;
 				line-height: 1em;
 			}
 
@@ -1954,6 +1955,7 @@
 			}
 
 				.main.style1 h2 {
+					font-size: 3em;
 				}
 
 			.main.style2 {
@@ -2105,7 +2107,7 @@
 /* One */
 
 	#one {
-		background: url("../images/profile/mariaperezfis1o115.jpg");
+		background: url("../images/profile/mariaperezfis1o631.jpg");
 		background-size: cover;
 		background-attachment: fixed;
 		background-position:  center center;
