@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Get fit today</title>
@@ -33,11 +28,37 @@
 			</header>
 
 		<!-- Intro -->
-			<section class="main-pt style1 dark adaptive-text" >
+			<section class="main-section style1 dark" >
 					<header>
-						<h2 style="margin-top: -7%; font-size: 100%; color:#ce0e0e;">Workout Plans</h2>
+						<h2 style="margin-top: -2%; padding-bottom: 2%; font-size: 100%; color:#ffffff;">Let's get you started!</h2>
 					</header>
 			</section>
+
+		<!--Question-->
+		<header>
+						<h2 style="line-height: 51px;" class="wht-text">What's in the program?</h2>
+					</header>
+
+		<!--Explanation-->
+		<section  class="col-md-12 adaptive-height">
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="reasons-why" style="padding-top: 40px;">- 1 on 1 phone and e-mail support from Coach Perez!</h2>
+					
+						<h2 class="reasons-why">- 6 weeks of fat burning, body shredding workouts!</h2>
+					
+						<h2 class="reasons-why">- The entire nutrition guide!</h2>
+					
+						<h2 class="reasons-why">- Tips and tricks to make your fitness goal a automatic part of your lifestyle!</h2>
+					
+						<h2 class="reasons-why">- 3+ years of fitness experience in one guide!</h2>
+
+						<h2 class="reasons-why">- For Only $49.99!</h2>
+					</div>
+			</section>
+
+			<br>
+			<br>
+			<br>
 
 		<!-- Payment -->
 		<section id="" class="style1 dark text-center">
@@ -48,6 +69,8 @@
 			    <label style="font-size: 44px;" for="card-element">
 			      Credit or debit card
 			    </label>
+			    <input style="font-size: 21px;margin-left: -12px;" type="email" name="receipt-email" placeholder="E-mail">
+			    <br>
 			    <div id="card-element">
 			      <!-- A Stripe Element will be inserted here.--> 
 			    </div>
@@ -56,23 +79,11 @@
 			    <div id="card-errors" role="alert"></div>
 			  </div>
 
-			  <button style="color: #ffffff;">Submit Payment</button>
+			  <button style="font-size: 195%; font-weight: 900; margin-top: 25px; color: #ffffff;" class="col-md-12 text-center">Start Today!</button>
 			</form>
 			</div>
 		</div>
 		</section>
-
-
-<!-- Brief PT explanation Text -->
-			<section id="one" class="fullscreen style3 text-center">
-				<div class="content box style2 col-md-12">
-					<header>
-						<h2 class="col-md-12" style="text-align: center; font-size: 456%;">Are you ready to make a change?</h2>
-					</header>
-					<p style="font-size: 216%;font-weight: 800; margin-top: 8px;font-family: 'Source Sans Pro' , 'sans-serif';" class="col-md-6 col-md-offset-3 text-center">Get started right now! For only $45 you can get the guidance you need showing you exactly how to get that body you've been waiting for! With 1 on 1 phone and e-mail support throughout your entire program, I will personally guide you every step of the way!</p>
-				<a href="comingsoon.html" style="font-size: 195%; font-weight: 900; margin-top: 25px;" class="col-md-12 text-center"><input value="Let's do it!" type="submit"></a>
-				</div>
-			</section>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -103,7 +114,62 @@
 			<script src="../../assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../../assets/js/main.js"></script>
+
 			<script src="https://js.stripe.com/v3/"></script>
+			<script type="text/javascript">
+			var stripe = Stripe('pk_test_mktTjPMZgXpK29Mv5DANBMYc');
+			var elements = stripe.elements();
+			// Custom styling can be passed to options when creating an Element.
+			var style = {
+			  base: {
+			    // Add your base input styles here. For example:
+			    fontSize: '21px',
+			    color: "#32325d",
+			  }
+			};
+
+			// Create an instance of the card Element.
+			var card = elements.create('card', {style: style});
+
+			// Add an instance of the card Element into the `card-element` <div>.
+			card.mount('#card-element');
+			card.addEventListener('change', function(event) {
+			  var displayError = document.getElementById('card-errors');
+			  if (event.error) {
+			    displayError.textContent = event.error.message;
+			  } else {
+			    displayError.textContent = '';
+			  }
+			});
+			// Create a token or display an error when the form is submitted.
+			var form = document.getElementById('payment-form');
+			form.addEventListener('submit', function(event) {
+			  event.preventDefault();
+
+			  stripe.createToken(card).then(function(result) {
+			    if (result.error) {
+			      // Inform the customer that there was an error.
+			      var errorElement = document.getElementById('card-errors');
+			      errorElement.textContent = result.error.message;
+			    } else {
+			      // Send the token to your server.
+			      stripeTokenHandler(result.token);
+			    }
+			  });
+			});
+			function stripeTokenHandler(token) {
+			  // Insert the token ID into the form so it gets submitted to the server
+			  var form = document.getElementById('payment-form');
+			  var hiddenInput = document.createElement('input');
+			  hiddenInput.setAttribute('type', 'hidden');
+			  hiddenInput.setAttribute('name', 'stripeToken');
+			  hiddenInput.setAttribute('value', token.id);
+			  form.appendChild(hiddenInput);
+
+			  // Submit the form
+			  form.submit();
+			}
+</script>
 
 	</body>
 </html>
